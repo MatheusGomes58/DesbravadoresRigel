@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Desbravadores Rigel - Inicio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="Favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Sweet alert lybary -->
+    <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#0270c0;">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Reuniões todos os domingos das 09:00 as 11:30 </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div  class="position-relative d-inline-flex align-items-center text-white top-shape px-5" style="background-color:#0270c0;">
+                    <div class="me-3 pe-3 border-end py-2" style="background-color:#0270c0;">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>contato@cluberigel.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>(19) 3342-3537</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <div class="row">
+                <h1 style="color:#0270c0;">
+                    <i><img src="./img/Logo.png" class="img-fluid" style="max-width: 100px;"></i>
+                    Clube Rigel
+                </h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="about.html" class="nav-item nav-link active">História</a>
+                <a href="service.html" class="nav-item nav-link">Atividades</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.html" class="dropdown-item">Liderança</a>
+                        <a href="testimonial.html" class="dropdown-item">Declarações</a>
+                        <a href="appointment.html" class="dropdown-item">Cadastre-se</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contato</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-book"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Cadastre-se</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Logon start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="container-fluid">
+                        <center>
+                        <div class="input-group" style="max-width: 600px;">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                class="form-control bg-transparent border-primary p-3" 
+                                placeholder="Seu email" 
+                                autofocus=""
+                            >
+                        </div>
+                        </br>
+                        </br>
+                        <div class="input-group" style="max-width: 600px;">
+                            <input 
+                                type="password"
+                                id="password" 
+                                class="form-control bg-transparent border-primary p-3" 
+                                placeholder="Sua senha"
+                            >
+                        </div>
+                        </br>
+                        </br>
+                        <button class="btn btn-primary px-4" onclick="login()">Entrar</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Logon End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">História</h1>
+                <a href="./index.html" class="h4 text-white">Inicio</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">História</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5"><center>
+                <div>
+                    <div class="container-fluid">
+                        <div class="section-title mb-4">
+                            <h1 class="display-5 mb-0" style="color: white;">Clube Rigel um sonho esperado...</h1>
+                        </div>
+                        <p class="mb-4" style="color: white;">
+                            Tudo começou em 2009 com a ideia da criação deste clube, porém só em 7 de novembro de 2009 foi aprovado a criação do clube.
+                            Mas, só um ano mais tarde foram aprovados os primeiros lideres para dirigir o clube no ano de 2011.
+                            </br>
+                            </br>
+                            Ata de 2011:
+                            </br>
+                            Diretor: Jeferson Pelito.
+                            </br>
+                            Diretor Associado: Diony Souza.
+                            </br>
+                            Diretora Associada: Samantha Lima.
+                            </br>
+                            Secretaria: Dayane Silva.
+                            </br>
+                            Capelão: Joelson.
+                            </br>
+                            Conselheiros: Rafael Mikio e Edgar Araujo.
+                            </br>
+                            Conselheiras: Denize Silva e Priscilla Araujo.
+                            </br>
+                        </p>
+                        <div class="section-title mb-4">
+                            <h1 class="display-5 mb-0" style="color: white;">Almejados por muitos...</h1>
+                        </div>
+                        <p class="mb-4" style="color: white;">
+                            Observações: o nome do clube seria Atalaia que foi oficializado em 12 de fevereiro de 2011, porem em 19/03/11 foi modificado e passou a se chamar Rígel.
+                            </br>
+                        </p>
+                        <div class="section-title mb-4">
+                            <h1 class="display-5 mb-0" style="color: white;">Por nós realizados...</h1>
+                        </div>    
+                        <p class="mb-4" style="color: white;">   
+                            </br>*Nosso primeiro acampamento foi em 13 de junho de 2011 no pico das cabras.
+                            </br>* O primeiro campori nosso foi da APaC edição 16 - Vitoria na Rocha.
+                            </br>* Primeiro curso de capitães e conselheiros foi em 25/03/2012.
+                            </br>* Primeiro Bivaque foi na Fazenda Santa Eliza em julho de 2012, detalhe fez muito frio.
+                            </br>
+                        </p>
+                        <div class="section-title mb-4">
+                            <h1 class="display-5 mb-0" style="color: white;">Juntos para sempre, por um mundo melhor...</h1>
+                        </div> 
+                        <p class="mb-4" style="color: white;"> 
+                            Desde então nossa pequena Rígel em crescimento participou de:
+                            </br>9 Edições do curso para lideres CTBD.
+                            </br>6 Cursos de capitães e Conselheiros.
+                            </br>3 Campori da APaC.
+                            </br>1 Campori da UCB - Um Chamado de Coragem (Julho2017)
+                            </br>1 Campori da DSA - Uma Grande Aventura (Janeiro2019)
+                            </br>Vários acampamentos em: Morungaba, Sitio São José e Jacupiranga.
+                            </br>5 Feiras de saúde.
+                            </br>4 Evangelismos a voz juvenil.
+                            </br>2 Feira de especialidades.
+                            </br>3 anos de Calebe. ( 2016 Calebe de lenço com a missão de fundar o clube “Asael”)
+                        </p>
+                        <div class="section-title mb-4">
+                            <h1 class="display-5 mb-0" style="color: white;">Sendo Jesus nossa estrela maior...</h1>
+                        </div>
+                        <p class="mb-4" style="color: white;">
+                            Diretores que já foram responsáveis por guiar nosso Clube:
+                            </br>
+                            </br>Jeferson Pelito de 2011 å 2012
+                            </br>Demison Ferreira Gomes de 2013 á 2017
+                            </br>Elen Siman de 2018 á Junho de 2019
+                            </br>Thiago Santo de Julho de 2019 á atualmente
+                        </p>        
+                        <div class="section-title mb-4">
+                            <h1 class="display-5 mb-0" style="color: white;">Indo a nossa frente, como nosso guia...</h1>
+                        </div>
+                        <p class="mb-4" style="color: white;">
+                            Nossa Diretoria é composta atualmente por:
+                            </br>
+                            </br>Diretor: THIAGO DOS SANTOS
+                            </br>Diretora Associada: KATIA REGINA GOMES
+                            </br>Diretor Associado: MATHEUS WILLIAN MORAES GOMES
+                            </br>Conselheiro Geral e Ancião: DEMISON FERREIRA GOMES
+                            </br>Secretaria: KATIA REGINA GOMES
+                            </br>Conselheiro da Unidade Taurus: WINICIUS LIMA
+                            </br>Conselheiro Leão: RUAN RODRIGUES
+                            </br>Conselheira da Unidade Belatrix: KATIANE RODRIGUES
+                            </br>Conselheira da Unidade Lyra: RAFAELA RODRIGUES PERES VIEIRA
+                            </br>Instrutor de Ordem Unida: MATHEUS WILLIAN MORAES GOMES
+                            </br>Instrutor de Nós e Amarra: MATHEUS WILLIAN MORAES GOMES
+                            </br>Segurança: JESIEL LOURENÇO DIAS
+                        </p>
+                        <div class="section-title mb-4">
+                            <h1 class="display-5 mb-0" style="color: white;">Rigel para sempre até o grande dia...</h1>
+                        </div>
+                        <p class="mb-4" style="color: white;">
+                            Este clube Já fez muita historia, e com a gloria de Deus continuaremos fazendo muito mais com a graças Dele e com fruto do clube, já foram batizadas 16 pessoas, para honra e glorificar a Deus.
+                        </p>
+                        </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; Todos os direitos reservados para Clube Rigel</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        Desenvolvido por MatheusGomes58
+                        </br>
+                        Distribuido por IASD JD. Santa Mônica
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Reuniões todos os domingos das 09:00 as 11:30 </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div  class="position-relative d-inline-flex align-items-center text-white top-shape px-5" style="background-color:#0270c0;">
+                    <div class="me-3 pe-3 border-end py-2" style="background-color:#0270c0;">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>contato@cluberigel.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>(19) 3342-3537</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/auth.js"></script>
+
+    <script>
+      $("#sidebar-toggle").click(function (e) {
+        e.preventDefault()
+        $("#page").toggleClass("toggled")
+      })
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
